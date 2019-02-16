@@ -1,0 +1,19 @@
+@import 'themes.scss';
+
+.footer {
+  padding: 30px;
+  text-align: center;
+
+  .copyright {
+    line-height: 1.6;
+    text-align: center;
+    font-size: 13px;
+
+    @include themify($themes) {
+      color: themed('text');
+  }}
+  .fa-heart {
+    @include themify($themes) {
+      color: themed('text');
+  }}
+}
