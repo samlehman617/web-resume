@@ -8,6 +8,7 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: "/web-resume/",
     filename: 'bundle.js'
     // filename: '[name].js'
   },
