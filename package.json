@@ -32,7 +32,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host=0.0.0.0 --port=9999 --mode development",
-    "build": "cp ./index.html ./dist/index.html && webpack",
+    "build": "cp ./index.html ./dist/index.html && cp ./cv.json ./dist/cv.json && webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
@@ -44,6 +44,7 @@
     "babel-preset-stage-1": "^6.1.18",
     "css-loader": "^2.1.0",
     "gh-pages": "^2.0.1",
+    "json-loader": "^0.5.7",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "prop-types": "^15.6.2",

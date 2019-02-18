@@ -21,8 +21,8 @@ class App extends Component {
 
   fetchData() {
     console.log("Fetching data...");
-    const url = '/cv.json';
-    axios.get(url).then(({data}) => {
+    const json = '/cv.json';
+    axios.get(json).then(({data}) => {
       this.setState({data});
     });
   }
