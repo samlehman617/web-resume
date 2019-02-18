@@ -6,11 +6,12 @@ export default class Profile extends Component {
   }
 
   render() {
+    const sam = "https://githubusercontent.com/samlehman617/web-resume/master/src/img/sam-transparent";
     return (
       <div className="profile">
         <img
           className="profile-img"
-          src={require('../img/sam-transparent.png')}
+          src={sam}
           alt={this.getFullName()} />
         <h1 className="name">{this.props.firstName} <em>{this.props.lastName}</em></h1>
         <h3 className="position">{this.props.position}</h3>
