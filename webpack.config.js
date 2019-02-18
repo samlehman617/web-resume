@@ -8,9 +8,8 @@ const config = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: "/web-resume/",
+    publicPath: "/dist/",
     filename: 'bundle.js'
-    // filename: '[name].js'
   },
   module: {
     rules: [{
@@ -44,7 +43,6 @@ const config = {
       }),
     ]
   },
-  // plugins: [],
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },

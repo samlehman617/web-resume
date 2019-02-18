@@ -5,13 +5,6 @@ import Header from './header';
 import Content from './content';
 import './styles/awesome.scss';
 
-function importAll(r) {
-  let images = {};
-  r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
-  return images;
-}
-const images = importAll(requre.context('../img', false, /\.(png|jpe?g|svg)$/));
-
 class App extends Component {
   constructor (props) {
     super(props);
