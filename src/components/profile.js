@@ -6,7 +6,7 @@ export default class Profile extends Component {
   }
 
   render() {
-    const sam = "https://githubusercontent.com/samlehman617/web-resume/master/src/img/sam-transparent";
+    const sam = "https://raw.githubusercontent.com/samlehman617/web-resume/master/src/img/sam-transparent";
     return (
       <div className="profile">
         <img
