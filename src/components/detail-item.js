@@ -22,7 +22,7 @@ class DetailItem extends Component {
   render() {
     const descriptions = this.props.descriptions;
     console.log("Img: " + this.props.image);
-    const img_url = "https://github.com/samlehman617/web-resume/blob/master/" + this.props.image;
+    const img_url = "https://raw.githubusercontent.com/samlehman617/web-resume/blob/master/" + this.props.image;
     return (
       <div className="item item-detail">
         <div className="image"><img className="image" src={img_url}/></div>

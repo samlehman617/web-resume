@@ -27,7 +27,7 @@ const config = {
         'sass-loader'
       ]
     }, {
-      test: /\.(jpg|png|svg)$/,
+      test: /\.(jpe?g|png|svg)$/,
       use: ['file-loader']
     }]
   },
