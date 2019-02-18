@@ -14,9 +14,11 @@ const config = {
   },
   module: {
     rules: [{
+      test: /\.html$/,
+      use: ['file-loader']
+    },{
       test: /\.(js|jsx)$/,
       exclude: /node_modules/,
-      // loader: 'babel-loader'
       use: ['babel-loader']
     },{
       test: /\.scss$/,
