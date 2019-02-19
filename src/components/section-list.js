@@ -3,6 +3,7 @@ import Section from './section';
 
 export default class SectionList extends Component {
   renderSection(section) {
+    console.log("Rendering section: " + section);
     return (
       <Section
         key={section.title}
@@ -14,6 +15,7 @@ export default class SectionList extends Component {
   }
 
   render() {
+    console.log("Sections"+ this.props.sections);
     const sections = this.props.sections || [];
 
     return (

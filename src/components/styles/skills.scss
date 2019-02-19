@@ -1,0 +1,55 @@
+@import 'themes.scss';
+
+.skill-list {
+    .title {
+        text-align: left;
+        font-size: 1rem;
+        width: 95%;
+        @include themify($themes) {
+            color: themed('subtitles');
+        }
+    }
+}
+.skillbar {
+    height: 30px;
+    margin-bottom: 10px;
+    @include themify($themes) {
+        background: themed('contentbg');
+        border-color: themed('subtitles');
+        border-width: 1px;
+        border-style: solid;
+    }
+    .skillbar-title {
+        z-index: 810;
+        height: 33px;
+        border-top-style: solid;
+        border-left-style: solid;
+        border-bottom-style: solid;
+        border-width: 1px;
+        background-color: transparent;
+        border-color: transparent;
+        @include themify($themes) {
+            background-color: themed('accent');
+            //border-color: themed('text');
+        }
+    }
+    .skillbar-bar {
+        z-index: 805;
+        position: relative;
+        top: -1px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-width: 1px;
+        @include themify($themes) {
+            background-color: themed('sidebar');
+            border-color: themed('subtitles');
+        }
+    }
+    .skillbar-percent {
+        z-index: 815;
+        @include themify($themes) {
+            color: themed('text');
+        }
+    }
+
+}

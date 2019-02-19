@@ -11,7 +11,7 @@ class Section extends Component {
 
     return isAwesome ? (
       <h1 className="section-title">
-        <em>{title.slice(0, 3)}</em>{title.slice(3)}
+        {title}
       </h1>
     ) : (
       <h1 className="section-title">title</h1>

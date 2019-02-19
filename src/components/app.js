@@ -24,6 +24,7 @@ class App extends Component {
     const json = '/cv.json';
     axios.get(json).then(({data}) => {
       this.setState({data});
+      console.log({data});
     });
   }
 

@@ -26,22 +26,25 @@
   }
 }
 
-.profile {
-  z-index: 205px;
-  padding: 14px 14px 5px 14px;
-  border-radius: 15px 15px 15px 15px; 
-  -moz-border-radius: 15px 15px 15px 15px; 
-  -webkit-border-radius: 15px 15px 15px 15px; 
-}
 .header {
   z-index: 200;
   margin-bottom: 0px;
-  border-radius: 15px 15px 15px 15px; 
-  -moz-border-radius: 15px 15px 15px 15px; 
-  -webkit-border-radius: 15px 15px 0px 0px; 
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 0px 0px;
   box-shadow: 0px 5px 5px -1px black;
   -webkit-box-shadow: 0px 5px 5px -1px black;
 
+  .profile {
+      z-index: 205px;
+      padding: 14px 14px 5px 14px;
+      border-radius: 15px 15px 15px 15px;
+      -moz-border-radius: 15px 15px 15px 15px;
+      -webkit-border-radius: 15px 15px 15px 15px;
+      .profile-img {
+        max-width: 150px;
+      }
+  }
   .contacts {
     display: grid;
     //grid-template-columns: 1fr 1fr 1fr;
@@ -60,7 +63,6 @@
     //min-width: 190px;
   }
   .social {
-  
   }
 }
 .header, .content {
@@ -77,23 +79,76 @@
 }
 .content {
   z-index: 100;
-  padding: 28px;
-  border-radius: 0px 0px 15px 15px; 
-  -moz-border-radius: 0px 0px 15px 15px; 
-  -webkit-border-radius: 0px 0px 15px 15px; 
-  .image {
-    display: inline-block;
+  padding: 20px;
+  border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -webkit-border-radius: 0px 0px 15px 15px;
+  .section {
+    display: block;
     float: left;
-    margin-right: 10px;
-  }
-  .title, .organization, .date {
-    display: inline-block;
-    float: left;
-    text-align: left;
-    max-width: 250px;
-  }
-  .description, .location {
-    float: left;
+    width: 100%;
+    font-size: 1.25rem;
+    .section-title {
+      overflow: visible;
+      overflow-wrap: normal;
+      margin-bottom: 5px;
+      white-space: normal;
+
+    }
+    .section-description {
+        font-size: 0.90rem;
+    }
+    .info {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 8px;
+        width: 100%;
+        max-width: 100%;
+        white-space: nowrap;
+        float: right;
+        div.image {
+            display: inline-block;
+            width: 40px;
+            float: left;
+            margin-top: 3px;
+            margin-bottom: 5px;
+            vertical-align: top;
+        }
+        img.image {
+            display: inline-block;
+            width: 40px;
+            float: left;
+        }
+        .title {
+            font-size: 0.90rem;
+        }
+        .organization {
+            font-size: 0.85rem;
+            white-space: normal;
+        }
+        .date {
+            font-size: 0.75rem;
+        }
+        .title, .organization, .date {
+            display: inline-block;
+            float: right;
+            text-align: left;
+            vertical-align: top;
+            width: calc(100% - 60px);
+        }
+    }
+    .descriptions {
+        font-size: 0.85rem;
+        padding-left: 18px;
+    }
+    .descriptions li {
+        margin-bottom: 5px;
+    }
+    .description, .location {
+        float: left;
+        font-size: 0.85rem;
+        margin-bottom: 2px;
+    }
   }
 }
 
@@ -123,6 +178,10 @@
     border-radius: 15px 0px 0px 15px;
     -moz-border-radius: 15px 0px 0px 15px;
     -webkit-border-radius: 15px 0px 0px 15px;
+    .profile-img {
+        width: 175px;
+    }
+
   }
   .content {
     width: 75%;
@@ -131,7 +190,7 @@
     border-radius: 0px 15px 15px 0px;
     -moz-border-radius: 0px 15px 15px 0px;
     -webkit-border-radius: 0px 15px 15px 0px;
-    
+
     .image {
       max-width: 50px;
       float:left;
@@ -169,7 +228,7 @@
       display: inline;
       min-width: 160px;
       float: right;
-      white-space: nowrap; 
+      white-space: nowrap;
       text-align: center;
       margin-top: 5px;
       i {

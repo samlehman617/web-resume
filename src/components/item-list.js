@@ -13,6 +13,7 @@ export default class ItemList extends Component {
   }
 
   renderItem(item) {
+    console.log(this.props.type);
     switch (this.props.type) {
     case 'simple':
       return (
@@ -40,6 +41,7 @@ export default class ItemList extends Component {
           description={item.description} />
       );
     case 'skill':
+      console.log("Skill");
       return (
         <SkillList
           title={item.title}
@@ -58,6 +60,7 @@ export default class ItemList extends Component {
   }
 
   render() {
+    console.log("Rendering list");
     const type = this.props.type;
     const items = this.props.items || [];
 

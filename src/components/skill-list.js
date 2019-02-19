@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SkillBar from 'react-skillbars';
 import SkillItem from './skill-item.js';
 
 class SkillList extends Component {
@@ -12,18 +13,21 @@ class SkillList extends Component {
     console.log("Icon: "+icon);
     return (
       <SkillItem 
-        name={skill.name}
+        name={skill.type}
         icon={icon} />
     );
   }
   
   render() {
+    console.log("Rendering skill-lists")
     // const title = this.props.title || '';
     // const skills = this.props.skills || [];
     return (
+      //<SkillList skills={} />
+      //<div className="skill-items">{this.props.skills.map(this.renderSkill)}</div>
       <div className="skill-list">
         <div className="title">{this.props.title}: </div>
-        <div className="skill-items">{this.props.skills.map(this.renderSkill)}</div>
+        <SkillBar skills={this.props.skills} />
       </div>
     );
   }

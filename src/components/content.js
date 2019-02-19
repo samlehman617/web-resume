@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SectionList from './section-list';
-// import Disqus from './disqus';
 
 class Content extends Component {
   onNewComment(comment) {
@@ -9,8 +8,8 @@ class Content extends Component {
 
   render() {
     const sections = this.props.data.sections;
-    // const disqus = this.props.config.disqus || {};
 
+    console.log(sections);
     console.log("Rending content...");
     return (
       <div className="content">
