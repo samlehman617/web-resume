@@ -64,6 +64,9 @@
   }
   .social {
   }
+  #skills.section {
+    display: none;
+  }
 }
 .header, .content {
   display: inline-block;
@@ -149,6 +152,9 @@
         font-size: 0.85rem;
         margin-bottom: 2px;
     }
+    #skills.section {
+        display: inline-block;
+    }
   }
 }
 
@@ -171,6 +177,9 @@
     -webkit-box-shadow: 2px 0 5px -2px black;
     .contacts {
       justify-items: left;
+    }
+    #skills.section {
+        display: inline-block;
     }
   }
   .profile {
@@ -198,10 +207,12 @@
       display: inline-block;
     }
     .title {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      float: left;
       margin-top: 5px;
     }
     .organization {
+      float: left;
       line-height: 1.2;
       margin-bottom: 15px;
     }
@@ -212,11 +223,9 @@
       width: 100%;
       margin-left: 20px;
     }
-    .name, .title, .description, .date, .location {
-    }
     .title, .name, .organization {
       text-align: left;
-      display: inline;
+      display: inline-block;
       max-width: 400px;
     }
     .date {
@@ -225,7 +234,7 @@
       margin-bottom: 15px;
     }
     .location {
-      display: inline;
+      display: inline-block;
       min-width: 160px;
       float: right;
       white-space: nowrap;
@@ -236,6 +245,9 @@
         overflow: visible;
         width: 100%;
       }
+    }
+    #skills.section {
+        display: none;
     }
   }
 }

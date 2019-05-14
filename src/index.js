@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import App from './components/app';
+import Resume from "./components/resume";
 
-ReactDOM.render(<App />, document.getElementById('app-root'));
+ReactDOM.render(<Resume />, document.getElementById("app-root"));

@@ -5,7 +5,7 @@ import Header from "./header";
 import Content from "./content";
 import "./styles/awesome.scss";
 
-class App extends Component {
+class Resume extends Component {
   constructor(props) {
     super(props);
 
@@ -45,4 +45,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Resume;

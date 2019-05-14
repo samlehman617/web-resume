@@ -28,8 +28,8 @@ class DetailItem extends Component {
         <div className="info">
           <div className="image"><img className="image" src={img_url}/></div>
           <span className="title">{this.props.title}</span>
-          <span className="location"><i>{this.props.location}</i></span>
           <span className="organization"><small>{this.props.organization}</small></span>
+          <span className="location"><i>{this.props.location}</i></span>
           <span className="date"><small>{this.props.date}</small></span>
         </div>
         {descriptions && this.renderDescriptions()}

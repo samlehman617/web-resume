@@ -1,5 +1,5 @@
 {
-  "name": "web-resume",
+  "name": "@samlehman617/web-resume",
   "version": "0.0.1",
   "description": "Web resume which can be configured with JSON data",
   "license": "MIT",
