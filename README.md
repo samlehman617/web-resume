@@ -27,7 +27,7 @@
 
 <br />
 
-**Web Resume** is a single page web application for your **Résumé**. All you need to do is to write your data in `cv.json` and run the project. This project uses [React](https://reactjs.org) for the frontend, and [Babel](https://babeljs.io) and [Webpack](https://webpack.js.org) to transpile and bundle the app into a single page web app.
+**Web Resume** is a single page web application for your **Résumé**. All you need to do is to write your data in `cv.json` and run the project. This project uses [React](https://reactjs.org) for the frontend, and [Babel](https://babeljs.io) and [Webpack](https://webpack.js.org) to transpile and bundle the app into a single page web application.
 
 
 
