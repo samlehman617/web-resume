@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/samlehman617/web-resume" title="Web Resume">
-    <img alt="Web Resume" src="https://github.com/samlehman617/web-resume/raw/master/icon.png" width="200px" height="200px" />
+    <img alt="Web Resume" src="https://github.com/samlehman617/web-resume/raw/master/screenshot.png" width="200px" height="200px" />
   </a>
   <br />
   <h1>Web Resume</h1>
@@ -11,7 +11,7 @@
 </p>
 
 <div align="center">
-  <a href="https://cv.samlehman.site">
+  <a href="https://cv.samlehman.me">
     <img alt="Example Resume" src="https://img.shields.io/badge/cv-demo-green.svg" />
   </a>
   <a href="https://opensource.org/licenses/mit-license.php">
@@ -19,6 +19,9 @@
   </a>
   <a href="https://github.com/ellerbrock/open-source-badge/">
     <img alt="Open Source Love" src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103" />
+  </a>
+  <a href="https://samlehman.me/web-resume">
+    <img alt="Hits" src="http://hits.dwyl.io/samlehman617/samlehman617/web-resume.svg" />
   </a>
 </div>
 
@@ -39,4 +42,4 @@ $ npm start
 
 ## License
 
-[MIT](https://github.com/samlehman617/web-resume/blob/master/LICENSE) © [Sam Lehman](https://www.samlehman.site)
+[MIT](https://github.com/samlehman617/web-resume/blob/master/LICENSE) © [Sam Lehman](https://samlehman.me)
